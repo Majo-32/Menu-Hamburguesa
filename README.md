@@ -4,12 +4,12 @@
 
 Encapsulamos el código dentro de una **función autoejecutable (IIFE)** que se activa apenas se carga la página. Esto permite:
 
-- Asegurarnos de que el DOM ya esté disponible.
+- Asegurarnos de que la estructura HTML ya esté disponible.
 - Evitar variables globales innecesarias.
 
 ### Paso a paso:
 1. Seleccionamos el botón del menú  y la lista de navegación.
-2. Verificamos que existan en el DOM (para prevenir errores).
+2. Verificamos que ambos elementos existan en la estructura HTML (evitamos errores si no están).
 3. Agregamos un `addEventListener` al botón.
 4. Cuando se hace clic, se **agrega o quita** la clase `.active` al menú.
 5. El CSS detecta esa clase y usa **transiciones con `max-height` y `opacity`** para mostrar u ocultar el menú suavemente.
